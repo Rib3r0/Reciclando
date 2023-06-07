@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+    <title>Document</title>
+
+    <style>
+            table {
+            border: 1px #c0c0c0 solid;
+            width: 100%;
+        }
+    
+        table th {
+            background-color: #00f;
+            color: #fff;
+        }
+    
+        table td {
+            background-color: #f0f0f0;
+            color: #0c0c0c;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Data Inicio: <input type="text" id="calendario__inicio" /></p>
+    <p>Data Fim: <input type="text" id="calendario__fim" /></p>
+
+    <div id="container"></div>
+    <script>
+        var container = document.getElementById("container");
+        var table = document.createElement('table');
+        var thead = document.createElement('thead');
+        var tbody = document.createElement('tbody');
+        var headRow = document.createElement('tr');
+
+        var headers = ['id', 'col1', 'col2', 'col3'];
+        headers.forEach(function (headerText) {
+            var th = document.createElement('th');
+            th.textContent = headerText;
+            headRow.appendChild(th);
+        });
+
+        var data = [
+            [1, 'data', 'data', 'data'],
+            [2, 'data', 'data', 'data'],
+            [3, 'data', 'data', 'data']
+        ];
+
+        data.forEach(function (rowData) {
+            var row = document.createElement('tr');
+
+            rowData.forEach(function (cellData) {
+                var cell = document.createElement('td');
+                cell.textContent = cellData;
+                row.appendChild(cell);
+            });
+
+            tbody.appendChild(row);
+        });
+
+        thead.appendChild(headRow);
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        container.appendChild(table);
+
+
+
+        $(function () {
+            $("#calendario__inicio").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        },
+
+            $(function () {
+                $("#calendario__inicio").datepicker({
+                    dateFormat: 'dd/mm/yy',
+                    dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'],
+                    dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+                    dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                    monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+                    monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+                });
+            }));
+
+        ////////////////////////////////////////////////////////////////////////////////////////
+
+        $(function () {
+            $("#calendario__fim").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        },
+
+            $(function () {
+                $("#calendario__fim").datepicker({
+                    dateFormat: 'dd/mm/yy',
+                    dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'],
+                    dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+                    dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                    monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+                    monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+                });
+            }));
+
+    </script>
+
+</body>
+
+</html>

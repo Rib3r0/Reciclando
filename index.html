@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para arquivos js -->
+    <script src="https://kit.fontawesome.com/896b01c4e1.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Link para importação de icones e fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/indexHeader.css">
+    <link rel="stylesheet" href="./css/indexFooter.css">
+    <link rel="stylesheet" href="./css/indexMenu.css">
+    <link rel="stylesheet" href="./css/indexMain.css">
+    <link rel="stylesheet" href="./css/empresas.css">
+    <link rel="stylesheet" href="./css/sobre__nos.css">
+    <link rel="stylesheet" href="./css/pontos__de__coleta.css">
+    <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/cadastro__empresa.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+
+    <script src="./js/carouselprojetos.js" defer></script>
+    <script src="./js/cadastroempresa.js" type="module"></script>
+    <script src="./js/login.js" type="module"></script>
+    <script src="./js/slides.js" defer type="module"></script>
+
+    <script src="./js/app.js" defer type="module"></script>
+
+
+
+
+    <title>Reciclando Educação</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="topo">
+            <div class="logo__site">
+                <a href="./index.html" class="navegacao">
+                    <img href="/" src="./img/logo__site.png" class="logo-desktop" alt="logo projeto">
+                    <img href="/" src="./img/logo__site__deitado.png" class="logo-desktop__deitada" alt="logo projeto">
+                </a>
+
+            </div>
+
+            <div class="aba__login">
+                <img src="./icon/login__icon.png" class="icon__login" alt="Aba de login">
+                <li><a class="texto__login" href="/login" onclick="route()" class="navegacao">Login</a></li>
+            </div>
+        </div>
+
+
+        <nav id="nav">
+
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+
+                <span id="hamburger"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li>
+                    <img src="./icon/icone__prancheta.png" alt="">
+                    <a href="/projetos" onclick="route()" class="navegacao">Projetos</a>
+                </li>
+
+                <li>
+                    <img src="./icon/icone__empresa.png" alt="">
+                    <a href="/empresas" onclick="route()" class="navegacao">Empresa</a>
+                </li>
+
+                <li>
+                    <img src="./icon/icone__sobrenos.png" alt="">
+                    <a href="/sobre_nos" onclick="route()" class="navegacao">Sobre nós</a>
+                </li>
+
+                <li>
+                    <img src="./icon/icone__pontocoleta.png" alt="">
+                    <a href="/pontos_coleta" onclick="route()" class="navegacao"> Pontos de coleta</a>
+                </li>
+
+                <li>
+                    <img src="./icon/icone__facaparte.png" alt="">
+                    <a href="/faca_parte" onclick="route()" class="navegacao">Faça parte</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="root">
+        <div class="area__main">
+            <div class="container__imagem__recepcionar__cliente">
+                <img class="imagem__recepcionar__cliente" src="./img/recepcao__site.png"
+                    alt="Imagem recepcionar o usuário">
+            </div>
+            <div class="container__texto__recepcionar__cliente">
+                <span class="texto__recepcionar__cliente">
+                    Sejam bem vindos ao projeto
+                    Reciclando educação!
+                    verifiquem as abas de navegação, para um melhor entendimento do projeto.
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="area__footer">
+            <div class="container__footer__telefone">
+                <!-- Icone Telefone -->
+                <i class="fa-solid fa-phone" id="icones__footer"></i>
+                <span class="texto__infomacoes">4002-0922</span>
+            </div>
+            <div class="container__footer__email">
+                <!-- Icone Email -->
+                <i class="fa-solid fa-envelope" id="icones__footer"></i>
+                <span class="texto__infomacoes">reciclando.educacao@gmail.com</span>
+            </div>
+            <div class="container__footer__facebook">
+                <!-- Icone facebook -->
+                <i class="fa-brands fa-facebook" id="icones__footer"></i>
+                <span class="texto__infomacoes">Reciclando Educação</span>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/carouselprojetos.js" type="module"></script>
+
+</body>
+
+</html>

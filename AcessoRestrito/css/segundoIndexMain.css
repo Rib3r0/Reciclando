@@ -1,0 +1,308 @@
+/* Main do index.html - recepção de boas vindas */
+
+.area__main{
+    display: grid;
+    grid-template-areas: 
+    "imagem texto";
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 118px;
+
+}
+
+.container__imagem__recepcionar__cliente{
+    grid-area: imagem;
+    display: flex;
+}
+
+.container__texto__recepcionar__cliente{
+    grid-area: texto;
+    display: flex;
+    width: 470px;
+    
+}
+
+.texto__recepcionar__cliente{
+    display: flex;
+    color: var(--green-color);
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: bold;
+}
+
+
+
+/* Responsividade para LAPTOP */
+
+/* Responsividade para laptop largo */
+
+@media(max-width: 1440px){
+    .area__main{
+        display: grid;
+        display: flex;
+        grid-template-areas: 
+        "imagem"
+        "texto";
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 213px;
+    }
+    
+    .container__imagem__recepcionar__cliente{
+        grid-area: imagem;
+        display: flex;
+    }
+    
+    .container__texto__recepcionar__cliente{
+        grid-area: texto;
+        display: flex;
+        width: 470px;
+        
+    }
+    
+    .texto__recepcionar__cliente{
+        display: flex;
+        color: var(--green-color);
+        font-size: 2rem;
+        font-weight: 900;
+        font-style: bold;
+        margin-bottom: 240px;
+    }
+}
+
+/* Responsividade para laptop */
+
+@media(max-width: 1024px){
+    .area__main{
+        display: grid;
+        display: flex;
+        grid-template-areas: 
+        "imagem"
+        "texto";
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 113px;
+    }
+    
+    .container__imagem__recepcionar__cliente{
+        grid-area: imagem;
+        display: flex;
+    }
+    
+    .container__texto__recepcionar__cliente{
+        grid-area: texto;
+        display: flex;
+        width: 470px;
+        
+    }
+    
+    .texto__recepcionar__cliente{
+        display: flex;
+        color: var(--green-color);
+        font-size: 2rem;
+        font-weight: 900;
+        font-style: bold;
+        margin-bottom: 250px;
+    }
+}
+
+/* Responsividade para tablet*/
+
+@media(max-width: 768px){
+    .area__main{
+        display: grid;
+        display: flex;
+        grid-template-areas: 
+        "imagem"
+        "texto";
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 113px;
+    }
+    
+    .container__imagem__recepcionar__cliente{
+        grid-area: imagem;
+        display: flex;
+    }
+    
+    .container__texto__recepcionar__cliente{
+        grid-area: texto;
+        display: flex;
+        width: 470px;
+        
+    }
+    
+    .texto__recepcionar__cliente{
+        display: flex;
+        color: var(--green-color);
+        font-size: 2rem;
+        font-weight: 900;
+        font-style: bold;
+        margin-bottom: 197px;
+    }
+}
+
+/* Responsividade para CELULAR */
+
+/* Responsividade para celular largo */
+
+@media(max-width: 425px){
+    #root{
+        max-width: 400px;
+    }
+    .area__main{
+        display: grid;
+        display: flex;
+        grid-template-areas: 
+        "imagem"
+        "texto";
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 425px;
+        margin-top: 113px;
+    }
+    
+    .container__imagem__recepcionar__cliente{
+        grid-area: imagem;
+        display: flex;
+        max-width: 289px;
+        max-height: 289px;
+    }
+
+    .imagem__recepcionar__cliente{
+        display: flex;
+        max-width: 289px;
+        max-height: 289px;
+    }
+    
+    .container__texto__recepcionar__cliente{
+        grid-area: texto;
+        display: flex;
+        max-width: 425px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        
+    }
+    
+    .texto__recepcionar__cliente{
+        display: flex;
+        color: var(--green-color);
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-style: bold;
+        width: 345px;
+        margin-bottom: 197px;
+    }
+}
+
+/* Responsividade para celular médio */
+
+@media(max-width: 375px){
+    .area__main{
+        display: grid;
+        display: flex;
+        grid-template-areas: 
+        "imagem"
+        "texto";
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 113px;
+    }
+    
+    .container__imagem__recepcionar__cliente{
+        grid-area: imagem;
+        display: flex;
+        max-width: 289px;
+        max-height: 289px;
+    }
+
+    .imagem__recepcionar__cliente{
+        display: flex;
+        max-width: 289px;
+        max-height: 289px;
+    }
+    
+    .container__texto__recepcionar__cliente{
+        grid-area: texto;
+        display: flex;
+        max-width: 325px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        
+    }
+    
+    .texto__recepcionar__cliente{
+        display: flex;
+        color: var(--green-color);
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-style: bold;
+        width: 375px;
+        margin-bottom: 197px;
+    }
+}
+
+/* Responsividade para celular pequeno */
+
+@media(max-width: 320px){
+    .area__main{
+        display: grid;
+        display: flex;
+        grid-template-areas: 
+        "imagem"
+        "texto";
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 113px;
+        max-width: 320px;
+    }
+    
+    .container__imagem__recepcionar__cliente{
+        grid-area: imagem;
+        display: flex;
+        max-width: 289px;
+        max-height: 289px;
+    }
+
+    .imagem__recepcionar__cliente{
+        display: flex;
+        max-width: 289px;
+        max-height: 289px;
+    }
+    
+    .container__texto__recepcionar__cliente{
+        grid-area: texto;
+        display: flex;
+        max-width: 290px;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    .texto__recepcionar__cliente{
+        display: flex;
+        color: var(--green-color);
+        font-size: 1.2rem;
+        font-weight: 900;
+        font-style: bold;
+        width: 290px;
+        margin-bottom: 197px;
+    }
+}

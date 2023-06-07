@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/add_projetos.css">
+    
+
+    <!-- Link para importação de fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- Link para JavaScript -->
+    <script src="../js/addprojetos.js" defer></script>
+    <script src="../js/comboboxprojetos.js" defer></script>
+
+    
+    <!-- Titulo do site -->
+    <title>Implementar Projeto</title>
+    
+</head>
+<body>
+    <main>
+        <form id="form" class="form">
+            <!-- Titulo do projeto inserido -->
+
+            <div class="form-content">
+                <input 
+                type="text"
+                class="input__titulo__projeto"
+                id="titulo__projeto"
+                placeholder="Digite o titulo do projeto"
+                required
+                />
+            </div>
+
+            <!-- Container - descrição do projeto -->
+            <div class="form-content">
+                <textarea class="descricao__projeto" rows="10" id="descricao__projeto" name="experiencia" placeholder="Digite a descrição do projeto" required></textarea>
+            </div>
+
+            <!-- Imagem do projeto inserida -->
+
+            <label class="picture" for="picture__input" tabIndex="0" >
+                <span class="picture__image"></span>
+                <input type="file" name="picture__input" id="picture__input" required>
+            </label>
+
+            <!-- Combobox - status do projeto -->
+
+            <div class="container__combobox">
+                <select class="selecao__status" id="select" required>
+                    <option class="opcoes__dentro__selecao__status" selected disabled value="">Selecione</option>
+                    <option class="opcoes__dentro__selecao__status" value="ativo">Ativo</option>
+                    <option class="opcoes__dentro__selecao__status" value="finalizado">Finalizado</option>
+                </select>
+            </div>
+            
+            <!-- Botão - enviar projeto -->
+
+            <div class="container__button__enviar__projeto">
+                <button class="botao__enviar__projeto" id="enviar__projeto" type="submit">Enviar projeto</button>
+            </div>
+
+        </form>
+        
+    </main>
+    
+
+    
+</body>
+</html>

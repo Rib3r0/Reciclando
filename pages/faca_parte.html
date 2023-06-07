@@ -1,0 +1,157 @@
+<div class="container__global__cadastro__empresa">
+    <div class="container">
+        <section class="header">
+          <h2>Cadastro Empresa</h2>
+        </section>
+    
+        <form id="form" class="form" action="/">
+          <div class="form-content">
+            <label for="nome__empresa">Nome da empresa</label>
+            <input
+              type="text"
+              id="nome__empresa"
+              placeholder="Digite o nome da empresa"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="cnpj">CNPJ</label>
+            <input
+              type="text"
+              id="cnpj"
+              placeholder="Digite o CNPJ"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite o seu email"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              placeholder="Digite o seu número de telefone"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="numero__whatsapp">Whatsapp</label>
+            <input
+              type="tel"
+              id="numero__whatsapp"
+              placeholder="Digite o número do seu whatsapp"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="cep">CEP</label>
+            <input
+              type="text"
+              id="cep"
+              placeholder="Digite o seu CEP"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+            <div class="form-content">
+                <div class="container__combobox__cadastro__empresa__estados">
+                    <select class="selecao__estado" id="select_estado" required>
+                        <option class="opcoes__dentro__selecao__estado" selected disabled value="">Estado</option>
+                        <option class="opcoes__dentro__selecao__estado" value="acre">Acre</option>
+                        <option class="opcoes__dentro__selecao__estado" value="alagoas">Alagoas</option>
+                        <option class="opcoes__dentro__selecao__estado" value="amapa">Amapá</option>
+                        <option class="opcoes__dentro__selecao__estado" value="amazonas">Amazonas</option>
+                        <option class="opcoes__dentro__selecao__estado" value="bahia">Bahia</option>
+                        <option class="opcoes__dentro__selecao__estado" value="ceara">Ceará</option>
+                        <option class="opcoes__dentro__selecao__estado" value="espirito__santo">Espírito Santo</option>
+                        <option class="opcoes__dentro__selecao__estado" value="goias">Goiás</option>
+                        <option class="opcoes__dentro__selecao__estado" value="maranhao">Maranhão</option>
+                        <option class="opcoes__dentro__selecao__estado" value="mato__grosso">Mato Grosso</option>
+                        <option class="opcoes__dentro__selecao__estado" value="mato__grosso__do__sul">Finalizado</option>
+                        <option class="opcoes__dentro__selecao__estado" value="minas__gerais">Minas Gerais</option>
+                        <option class="opcoes__dentro__selecao__estado" value="para">Pará</option>
+                        <option class="opcoes__dentro__selecao__estado" value="paraiba">Paraíba</option>
+                        <option class="opcoes__dentro__selecao__estado" value="parana">Paraná</option>
+                        <option class="opcoes__dentro__selecao__estado" value="pernambuco">Pernambuco</option>
+                        <option class="opcoes__dentro__selecao__estado" value="piaui">Piauí</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rio__de__janeiro">Rio de Janeiro</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rio__grande__do__norte">Rio Grande do Norte</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rio__grande__do__sul">Rio Grande do Sul</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rondonia">Rondônia</option>
+                        <option class="opcoes__dentro__selecao__estado" value="roraima">Roraima</option>
+                        <option class="opcoes__dentro__selecao__estado" value="santa__catarina">Santa Catarina</option>
+                        <option class="opcoes__dentro__selecao__estado" value="sao__paulo">São Paulo</option>
+                        <option class="opcoes__dentro__selecao__estado" value="sergipe">Sergipe</option>
+                        <option class="opcoes__dentro__selecao__estado" value="tocantins">Tocantins</option>
+                    </select>
+                </div>    
+            </div>
+    
+    
+            <div class="form-content">
+                <div class="container__combobox__cadastro__empresa__material">
+                    <select class="selecao__material" id="select_material" required>
+                        <option class="opcoes__dentro__selecao__material" selected disabled value="">Material</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__madeira">Madeira</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__metal">Metal</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__papel">Papel</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__pilha">Pilhas</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__plastico">Plástico</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__vidro">Vidro</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__diversos__materiais">Diversos materiais</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="form-content">
+                <div class="container__combobox__cadastro__empresa__periodo">
+                    <select class="selecao__periodo" id="select_periodo" required>
+                        <option class="opcoes__dentro__selecao__periodo" selected disabled value="">Periodo</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__menos__quinze__dias">Menos de 15 dias</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__um__mes">1 mês</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__dois__mes">2 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__tres__mes">3 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__quatro__mes">4 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__cinco__mes">5 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__seis__mes">6 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__sete__mes">7 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__oito__mes">8 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__nove__mes">9 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__dez__mes">10 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__onze__mes">11 meses</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__um__ano">1 ano</option>
+                        <option class="opcoes__dentro__selecao__periodo" value="periodo__mais__de__um__ano">Mais de 1 Ano</option>
+                    </select>
+                </div>
+            </div>
+          
+    
+          
+            <!-- <button type="submit"  onclick="checkForm()">Entrar</button>  -->
+            
+            <!-- Botão sem Formaction, somente com o ID do botão -->
+
+        </form>
+        <button onclick="checkForm()" id="botao_faca_parte">Entrar</button>
+        
+      </div>
+</div>
+

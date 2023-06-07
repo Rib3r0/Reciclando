@@ -1,0 +1,62 @@
+<div class="container__global__entrega__material">
+    <div class="container-entrega-material">
+    
+        <form id="form-material" class="form-material">
+          <div class="form-entrega-material">
+            <label for="nome__contribuidor__material">Nome contribuidor</label>
+            <input
+              type="text"
+              id="nome__contribuidor__material"
+              placeholder="Digite o seu nome"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-entrega-material">
+            <label for="quantidade__material__inserido">Quantidade material</label>
+            <input
+              type="number" 
+              min="0" max="100000"
+              id="quantidade__material__inserido"
+              placeholder="Digite o a quantidade de material"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+
+          <div class="form-entrega-material">
+            <label for="local__material__entregue">Local de entrega de material</label>
+            <input
+              type="text" 
+              id="local__material__entregue"
+              placeholder="Digite o local onde o material foi entregue"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+    
+            <div class="form-entrega-material">
+                <div class="container__combobox__inserir__material">
+                    <select class="selecao__inserir__tipo__material" id="selecao__inserir__tipo__material" required>
+                        <option class="opcoes__dentro__selecao__material" selected disabled value="">Material</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__madeira">Madeira</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__metal">Metal</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__papel">Papel</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__pilha">Pilhas</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__plastico">Plástico</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__vidro">Vidro</option>
+                        <option class="opcoes__dentro__selecao__material" value="material__diversos__materiais">Diversos materiais</option>
+                    </select>
+                </div>
+            </div>
+    
+          
+    
+        </form>
+        <button  onclick="checkFormValidarInsercaoMaterial()">Cadastrar material</button>
+    
+      </div>
+</div>
+

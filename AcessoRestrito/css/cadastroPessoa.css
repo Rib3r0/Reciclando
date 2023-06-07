@@ -1,0 +1,721 @@
+.container__global__cadastro__pessoa{
+    display: flex;
+    width: 100%;
+    background-image: url(../img/imagem__mulher__reciclando__material.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container__pessoa__form__pessoa{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--gray-color);
+    border-radius: 14px;
+    margin-bottom: 220px;
+    margin-top: 365px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+  }
+  
+  .header{
+    background: var(--green-color);
+    padding: 24px;
+    text-align: center;
+    color: var(--white-color);
+  }
+  
+  .form-pessoa-cadastrada{
+    padding: 18px;
+    gap: 20px;
+  }
+  
+  .form-content-pessoa-cadastrada{
+    margin-bottom: 40px;
+    width: 100%;
+    border: 3px solid var(--white-color);
+    position: relative;
+    background-color: var(--green-color);
+    box-shadow: 0px 0px 4px var(--black-color);
+    
+  }
+  
+  .form-content-pessoa-cadastrada label{
+    display: inline-block;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: var(--green-color);
+    color: var(--white-color);
+  }
+  
+  .form-content-pessoa-cadastrada input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 0px solid var(--white-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
+  }
+  
+  .form-content-pessoa-cadastrada a{
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    visibility: hidden;
+    
+  }
+  
+  .form-pessoa-cadastrada button{
+    background-color: var(--dark-green-color);
+    color: var(--white-color);
+    width: 100%;
+    height: 80px;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+  
+  .form-content-pessoa-cadastrada.error input{
+    border-color: #ff3b25;
+  }
+  
+  .form-content-pessoa-cadastrada.error a{
+    color: #ff3b25;
+    visibility: visible;
+  }
+
+  .container__combobox__cadastro__pessoa__estados{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: var(--green-color);
+    
+  }
+  
+  .selecao__estado__pessoa{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    
+  }
+
+  /* --------------------------------------------------------- */
+  /* RESPONSIVIDADE LAPTOP 1024 */
+  /* --------------------------------------------------------- */
+
+  @media(max-width: 1024px){
+    .container__global__cadastro__pessoa{
+      display: flex;
+      width: 100%;
+      background-image: none;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .container__pessoa__form__pessoa{
+      display: flex;
+      flex-direction: column;
+      
+      background-color: var(--gray-color);
+      border-radius: 14px;
+      margin-bottom: 220px;
+      margin-top: 365px;
+      max-width: 900px;
+      width: 100%;
+      box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+      overflow: hidden;
+    }
+    
+    .header{
+      background: var(--green-color);
+      padding: 24px;
+      text-align: center;
+      color: var(--white-color);
+    }
+    
+    .form-pessoa-cadastrada{
+      padding: 18px;
+      gap: 20px;
+    }
+    
+    .form-content-pessoa-cadastrada{
+      margin-bottom: 40px;
+      width: 100%;
+      border: 3px solid var(--white-color);
+      position: relative;
+      background-color: var(--green-color);
+      box-shadow: 0px 0px 4px var(--black-color);
+      
+    }
+    
+    .form-content-pessoa-cadastrada label{
+      display: inline-block;
+      margin-bottom: 4px;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada input{
+      display: block;
+      width: 100%;
+      padding: 8px;
+      border: 0px solid var(--white-color);
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada a{
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      visibility: hidden;
+      
+    }
+    
+    .form-pessoa-cadastrada button{
+      background-color: var(--dark-green-color);
+      color: var(--white-color);
+      width: 100%;
+      height: 80px;
+      border-radius: 14px;
+      padding: 10px;
+      border: 0;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    
+    .form-content-pessoa-cadastrada.error input{
+      border-color: #ff3b25;
+    }
+    
+    .form-content-pessoa-cadastrada.error a{
+      color: #ff3b25;
+      visibility: visible;
+    }
+  
+    .container__combobox__cadastro__pessoa__estados{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: var(--green-color);
+      
+    }
+    
+    .selecao__estado__pessoa{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+      
+    }
+  }
+
+  /* --------------------------------------------------------- */
+  /* RESPONSIVIDADE TABLET 768 */
+  /* --------------------------------------------------------- */
+
+  @media(max-width: 768px){
+    .container__global__cadastro__pessoa{
+      display: flex;
+      width: 100%;
+      background-image: none;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .container__pessoa__form__pessoa{
+      display: flex;
+      flex-direction: column;
+      
+      background-color: var(--gray-color);
+      border-radius: 14px;
+      margin-bottom: 220px;
+      margin-top: 365px;
+      max-width: 600px;
+      width: 100%;
+      box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+      overflow: hidden;
+    }
+    
+    .header{
+      background: var(--green-color);
+      padding: 24px;
+      text-align: center;
+      color: var(--white-color);
+    }
+    
+    .form-pessoa-cadastrada{
+      padding: 18px;
+      gap: 20px;
+    }
+    
+    .form-content-pessoa-cadastrada{
+      margin-bottom: 40px;
+      width: 100%;
+      border: 3px solid var(--white-color);
+      position: relative;
+      background-color: var(--green-color);
+      box-shadow: 0px 0px 4px var(--black-color);
+      
+    }
+    
+    .form-content-pessoa-cadastrada label{
+      display: inline-block;
+      margin-bottom: 4px;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada input{
+      display: block;
+      width: 100%;
+      padding: 8px;
+      border: 0px solid var(--white-color);
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada a{
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      visibility: hidden;
+      
+    }
+    
+    .form-pessoa-cadastrada button{
+      background-color: var(--dark-green-color);
+      color: var(--white-color);
+      width: 100%;
+      height: 80px;
+      border-radius: 14px;
+      padding: 10px;
+      border: 0;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    
+    .form-content-pessoa-cadastrada.error input{
+      border-color: #ff3b25;
+    }
+    
+    .form-content-pessoa-cadastrada.error a{
+      color: #ff3b25;
+      visibility: visible;
+    }
+  
+    .container__combobox__cadastro__pessoa__estados{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: var(--green-color);
+      
+    }
+    
+    .selecao__estado__pessoa{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+      
+    }
+  }
+
+  /* --------------------------------------------------------- */
+  /* RESPONSIVIDADE MOBILE L 425 */
+  /* --------------------------------------------------------- */
+
+  @media(max-width: 425px){
+    .container__global__cadastro__pessoa{
+      display: flex;
+      width: 100%;
+      background-image: none;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .container__pessoa__form__pessoa{
+      display: flex;
+      flex-direction: column;
+      
+      background-color: var(--gray-color);
+      border-radius: 14px;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      max-width: 400px;
+      width: 100%;
+      box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+      overflow: hidden;
+    }
+    
+    .header{
+      background: var(--green-color);
+      padding: 24px;
+      text-align: center;
+      color: var(--white-color);
+    }
+    
+    .form-pessoa-cadastrada{
+      padding: 18px;
+      gap: 20px;
+    }
+    
+    .form-content-pessoa-cadastrada{
+      margin-bottom: 40px;
+      width: 100%;
+      border: 3px solid var(--white-color);
+      position: relative;
+      background-color: var(--green-color);
+      box-shadow: 0px 0px 4px var(--black-color);
+      
+    }
+    
+    .form-content-pessoa-cadastrada label{
+      display: inline-block;
+      margin-bottom: 4px;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada input{
+      display: block;
+      width: 100%;
+      padding: 8px;
+      border: 0px solid var(--white-color);
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada a{
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      visibility: hidden;
+      
+    }
+    
+    .form-pessoa-cadastrada button{
+      background-color: var(--dark-green-color);
+      color: var(--white-color);
+      width: 100%;
+      height: 80px;
+      border-radius: 14px;
+      padding: 10px;
+      border: 0;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    
+    .form-content-pessoa-cadastrada.error input{
+      border-color: #ff3b25;
+    }
+    
+    .form-content-pessoa-cadastrada.error a{
+      color: #ff3b25;
+      visibility: visible;
+    }
+  
+    .container__combobox__cadastro__pessoa__estados{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: var(--green-color);
+      
+    }
+    
+    .selecao__estado__pessoa{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+      
+    }
+  }
+
+ /* --------------------------------------------------------- */
+  /* RESPONSIVIDADE MOBILE M 375 */
+  /* --------------------------------------------------------- */
+
+  @media(max-width: 375px){
+    .container__global__cadastro__pessoa{
+      display: flex;
+      width: 100%;
+      background-image: none;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .container__pessoa__form__pessoa{
+      display: flex;
+      flex-direction: column;
+      
+      background-color: var(--gray-color);
+      border-radius: 14px;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      max-width: 350px;
+      width: 100%;
+      box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+      overflow: hidden;
+    }
+    
+    .header{
+      background: var(--green-color);
+      padding: 24px;
+      text-align: center;
+      color: var(--white-color);
+    }
+    
+    .form-pessoa-cadastrada{
+      padding: 18px;
+      gap: 20px;
+    }
+    
+    .form-content-pessoa-cadastrada{
+      margin-bottom: 40px;
+      width: 100%;
+      border: 3px solid var(--white-color);
+      position: relative;
+      background-color: var(--green-color);
+      box-shadow: 0px 0px 4px var(--black-color);
+      
+    }
+    
+    .form-content-pessoa-cadastrada label{
+      display: inline-block;
+      margin-bottom: 4px;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada input{
+      display: block;
+      width: 100%;
+      padding: 8px;
+      border: 0px solid var(--white-color);
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada a{
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      visibility: hidden;
+      
+    }
+    
+    .form-pessoa-cadastrada button{
+      background-color: var(--dark-green-color);
+      color: var(--white-color);
+      width: 100%;
+      height: 80px;
+      border-radius: 14px;
+      padding: 10px;
+      border: 0;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    
+    .form-content-pessoa-cadastrada.error input{
+      border-color: #ff3b25;
+    }
+    
+    .form-content-pessoa-cadastrada.error a{
+      color: #ff3b25;
+      visibility: visible;
+    }
+  
+    .container__combobox__cadastro__pessoa__estados{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: var(--green-color);
+      
+    }
+    
+    .selecao__estado__pessoa{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+      
+    }
+  }
+
+ /* --------------------------------------------------------- */
+  /* RESPONSIVIDADE MOBILE M 320 */
+  /* --------------------------------------------------------- */
+
+  @media(max-width: 320px){
+    .container__global__cadastro__pessoa{
+      display: flex;
+      width: 100%;
+      background-image: none;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .container__pessoa__form__pessoa{
+      display: flex;
+      flex-direction: column;
+      
+      background-color: var(--gray-color);
+      border-radius: 14px;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      max-width: 300px;
+      width: 100%;
+      box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+      overflow: hidden;
+    }
+    
+    .header{
+      background: var(--green-color);
+      padding: 24px;
+      text-align: center;
+      color: var(--white-color);
+    }
+    
+    .form-pessoa-cadastrada{
+      padding: 18px;
+      gap: 20px;
+    }
+    
+    .form-content-pessoa-cadastrada{
+      margin-bottom: 40px;
+      width: 100%;
+      border: 3px solid var(--white-color);
+      position: relative;
+      background-color: var(--green-color);
+      box-shadow: 0px 0px 4px var(--black-color);
+      
+    }
+    
+    .form-content-pessoa-cadastrada label{
+      display: inline-block;
+      margin-bottom: 4px;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada input{
+      display: block;
+      width: 100%;
+      padding: 8px;
+      border: 0px solid var(--white-color);
+      background-color: var(--green-color);
+      color: var(--white-color);
+    }
+    
+    .form-content-pessoa-cadastrada a{
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      visibility: hidden;
+      
+    }
+    
+    .form-pessoa-cadastrada button{
+      background-color: var(--dark-green-color);
+      color: var(--white-color);
+      width: 100%;
+      height: 80px;
+      border-radius: 14px;
+      padding: 10px;
+      border: 0;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    
+    .form-content-pessoa-cadastrada.error input{
+      border-color: #ff3b25;
+    }
+    
+    .form-content-pessoa-cadastrada.error a{
+      color: #ff3b25;
+      visibility: visible;
+    }
+  
+    .container__combobox__cadastro__pessoa__estados{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: var(--green-color);
+      
+    }
+    
+    .selecao__estado__pessoa{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: var(--green-color);
+      color: var(--white-color);
+      
+    }
+  }
+
+ 

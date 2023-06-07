@@ -1,0 +1,43 @@
+.controle__container {
+    margin-top: 100px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.datapicker__container {
+    width: 1350px;
+    height: 27px;
+}
+
+p {
+    margin-bottom: 20px;
+    gap: 100px;
+}
+
+#container {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border: 1px #c0c0c0 solid;
+    text-align: center;
+    width: 99%;
+    height: 423px;
+}
+
+table th {
+    background-color: var(--dark-green-color);
+    height: 100px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+table td {
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}

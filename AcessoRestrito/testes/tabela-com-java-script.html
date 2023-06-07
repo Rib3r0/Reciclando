@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            border: 1px #c0c0c0 solid;
+            width: 100%;
+        }
+    
+        table th {
+            background-color: #00f;
+            color: #fff;
+        }
+    
+        table td {
+            background-color: #f0f0f0;
+            color: #0c0c0c;
+        }
+    </style>
+    
+    </head>
+    
+    <body>
+    
+        <div id="container"></div>
+    
+        <script>
+            var container = document.getElementById("container");
+            var table = document.createElement('table');
+            var thead = document.createElement('thead');
+            var tbody = document.createElement('tbody');
+            var headRow = document.createElement('tr');
+            
+            var headers = ['id', 'col1', 'col2', 'col3'];
+            headers.forEach(function (headerText) {
+                var th = document.createElement('th');
+                th.textContent = headerText;
+                headRow.appendChild(th);
+            });
+    
+            var data = [
+                [1, 'data', 'data', 'data'],
+                [2, 'data', 'data', 'data'],
+                [3, 'data', 'data', 'data']
+            ];
+    
+            data.forEach(function (rowData) {
+                var row = document.createElement('tr');
+    
+                rowData.forEach(function (cellData) {
+                    var cell = document.createElement('td');
+                    cell.textContent = cellData;
+                    row.appendChild(cell);
+                });
+    
+                tbody.appendChild(row);
+            });
+    
+            thead.appendChild(headRow);
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            container.appendChild(table);
+        </script>
+    
+
+
+    <!-- <div id="test"></div>
+
+    <script>
+        var novaTabela = document.createElement("table");
+        var cabecalho = document.createElement("thead");
+        var corpo = document.createElement("tbody");
+
+        tabela.appendChild(cabecalho);
+        tabela.appendChild(corpo);
+
+        document.getElementById("test").appendChild(novaTabela);
+
+    </script> -->
+</body>
+
+</html>

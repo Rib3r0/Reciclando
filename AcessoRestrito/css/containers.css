@@ -1,0 +1,39 @@
+.material__container {
+    margin-top: 100px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contribuentes__container {
+    margin-top: 100px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.controle__container {
+    margin-top: 100px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.calendario__checkbox {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+}
+
+.datapicker__container {
+    width: 500px;
+    height: 27px;
+}
+
+p {
+    margin-bottom: 20px;
+    gap: 20px;
+}

@@ -1,0 +1,259 @@
+.sobre__nos-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.titulo__text {
+	width: 550px;
+	height: 50px;
+	font-size: 32px;
+	padding: 5px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	color: var(--white-color);
+	background-color: var(--green-color);
+	border-radius: 100px;
+	margin: 86px 0px 62px 0px;
+}
+
+.texto__introdutorio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 829px;
+	height: 258px;
+}
+
+.texto__descritivo_sobre__nos {
+	font-size: 32px;
+	text-align: center;
+
+}
+
+.container-slide {
+	margin-top: 62px;
+	width: 1150px;
+	height: 930px;
+	/* background-color: springgreen; */
+	display: flex;
+	justify-content: space-between;
+	border-radius: var(--pattern-border-radius);
+	box-shadow: 0 20px 30px #00000088;
+	border: 5px solid black;
+}
+
+
+.container-items {
+	position: absolute;
+	display: flex;
+	width: 50vw;
+	height: 50vh;
+	border-radius: var(--pattern-border-radius);
+	overflow: hidden;
+}
+
+.item {
+	width: 50vw;
+	height: 50vh;
+	transition: all 1s;
+}
+
+.item:first-child {
+	margin-left: -100%;
+}
+
+.item img {
+	width: 50vw;
+	height: 50vh;
+	border-radius: var(--pattern-border-radius);
+}
+
+.action-button {
+	font: bold 30px sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	color: #00000000;
+	user-select: none;
+	z-index: 1;
+}
+
+.action-button:hover {
+	color: white;
+	background-color: #00000088;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+#previous {
+	border-radius: var(--pattern-border-radius) 0px 0px var(--pattern-border-radius);
+}
+
+#next {
+	border-radius: 0px var(--pattern-border-radius) var(--pattern-border-radius) 0px;
+}
+
+.indicators {
+	position: absolute;
+	color: white;
+	left: 50%;
+	top: 75%;
+	transform: translate(-50%);
+	display: flex;
+	gap: 5px;
+}
+
+.indicators span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 50%;
+	user-select: none;
+	cursor: pointer;
+}
+
+.indicators span:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 3px black;
+}
+
+.indicators .selected {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 3px black;
+}
+
+
+
+.visao_valores_missao {
+	text-align: center;
+	width: 1065px;
+	height: 399px;
+	margin-top: 35px;
+	margin-bottom: 47px;
+}
+
+.subtitulo__sobre__nos {
+	color: var(--green-color);
+	font-size: 32px;
+	font-weight: 800;
+	margin-top: 20px;
+
+}
+
+.visao_valores_missao p {
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-items {
+	position: absolute;
+	display: flex;
+	width: 38vw;
+	height: 40vh;
+	border-radius: var(--pattern-border-radius);
+	overflow: hidden;
+}
+
+.item {
+	width: 38vw;
+	height: 40vh;
+	transition: all 1s;
+}
+
+.item:first-child {
+	margin-left: -100%;
+}
+
+.item img {
+	width: 38vw;
+	height: 40vh;
+	border-radius: var(--pattern-border-radius);
+}
+
+.action-button {
+	font: bold 30px sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	color: #00000000;
+	user-select: none;
+	z-index: 1;
+}
+
+.action-button:hover {
+	color: white;
+	background-color: #00000088;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+#previous {
+	border-radius: var(--pattern-border-radius) 0px 0px var(--pattern-border-radius);
+}
+
+#next {
+	border-radius: 0px var(--pattern-border-radius) 0px 0px var(--pattern-border-radius) 0px;
+}
+
+.indicators {
+	position: absolute;
+	color: white;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%);
+	display: flex;
+	gap: 5px;
+}
+
+.indicators span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 50%;
+	user-select: none;
+	cursor: pointer;
+}
+
+.indicators span:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 3px black;
+}
+
+.indicators .selected {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 3px black;
+}

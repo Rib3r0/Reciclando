@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para arquivos js -->
+    <script src="https://kit.fontawesome.com/896b01c4e1.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+    <!-- Link para importação de icones e fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para css -->
+    <link rel="stylesheet" href="./css/segundoReset.css">
+    <link rel="stylesheet" href="./css/segundoRoot.css">
+    <link rel="stylesheet" href="./css/segundoStyle.css">
+    <link rel="stylesheet" href="./css/segundoIndexHeader.css">
+    <link rel="stylesheet" href="./css/segundoIndexFooter.css">
+      <link rel="stylesheet" href="./css/segundoIndexMain.css">
+    <link rel="stylesheet" href="./css/controle.css">
+    <link rel="stylesheet" href="./css/cadastroPessoa.css">
+    <link rel="stylesheet" href="./css/containers.css">
+    <link rel="stylesheet" href="./css/combobox.css">
+    <link rel="stylesheet" href="./css/tabelas.css">
+    <link rel="stylesheet" href="./css/inserirMaterial.css">
+
+
+    <link rel="stylesheet" href="../css/login.css">
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/896b01c4e1.js" crossorigin="anonymous"></script>
+
+
+    <script src="../js/login.js" type="module"></script>
+    <script src="./js/cadastropessoa.js" type="module"></script>
+    <script src="./js/inserirmaterial.js" type="module"></script>
+    <script src="./js/app.js" defer type="module"></script>
+
+    <title>Reciclando Educação</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="topo">
+
+            <div class="logo__site">
+                <a href="../index.html" class="navegacao">
+                    <img href="/" src="./img/logo__site.png" class="logo-desktop" alt="logo projeto">
+                    <img href="/" src="./img/logo__site__deitado.png" class="logo-desktop__deitada" alt="logo projeto">
+                </a>
+            </div>
+
+            <div class="aba__login">
+                <img src="./icon/login__icon.png" class="icon__login" alt="Aba de login">
+                <li>
+                    <a class="texto__login" href="/login" onclick="segundoRoute()" class="navegacao">Login</a>
+                </li>
+            </div>
+        </div>
+
+        <nav id="nav">
+
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+
+                <span id="hamburger"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li>
+                    <img src="./icon/calendario.png" alt="">
+                    <a href="/controle" onclick="segundoRoute()" class="navegacao">Controle</a>
+                </li>
+
+                <li>
+                    <img src="./icon/LOGO.png" alt="">
+                    <a href="/material" onclick="segundoRoute()" class="navegacao">Material</a>
+                </li>
+
+                <li>
+                    <img src="./icon/aperto-de-mao.png" alt="">
+                    <a href="/contribuentes" onclick="segundoRoute()" class="navegacao">Contribuentes</a>
+                </li>
+
+                <li>
+                    <img src="./icon/carrinho-de-mao-com-materiais-de-construcao.png" alt="">
+                    <a href="/cadastro__materiais" onclick="segundoRoute()" class="navegacao">Cadastro materiais</a>
+                </li>
+
+                <li>
+                    <img src="./icon/cadastro.png" alt="">
+                    <a href="/cadastro__empresa" onclick="segundoRoute()" class="navegacao">Cadastro empresa</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="root">
+        <div class="area__main">
+            <div class="container__imagem__recepcionar__cliente">
+                <img class="imagem__recepcionar__cliente" src="../img/recepcao__site.png"
+                    alt="Imagem recepcionar o usuário">
+            </div>
+            <div class="container__texto__recepcionar__cliente">
+                <span class="texto__recepcionar__cliente">
+                    Sejam bem vindos ao projeto
+                    Reciclando educação!
+                    verifiquem as abas de navegação, para um melhor entendimento do projeto.
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="area__footer">
+            <div class="container__footer__telefone">
+                <!-- Icone Telefone -->
+                <i class="fa-solid fa-phone" id="icones__footer"></i>
+                <span class="texto__infomacoes">4002-0922</span>
+            </div>
+            <div class="container__footer__email">
+                <!-- Icone Email -->
+                <i class="fa-solid fa-envelope" id="icones__footer"></i>
+                <span class="texto__infomacoes">reciclando.educacao@gmail.com</span>
+            </div>
+            <div class="container__footer__facebook">
+                <!-- Icone facebook -->
+                <i class="fa-brands fa-facebook" id="icones__footer"></i>
+                <span class="texto__infomacoes">Reciclando Educação</span>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="./js/menu.js"></script>
+
+
+</body>
+
+</html>

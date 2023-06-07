@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend> Escolha seus interesses </legend>
+        <div>
+            <input type="checkbox" id="codificação" name="interesse" value="codificação">
+            <label for="coding"> Codificação </label>
+        </div>
+        <div>
+            <input type="checkbox" id="música" name="interesse" value="música">
+            <label for="music"> Música </label>
+        </div>
+    </fieldset>
+
+    <script>
+        var otherCheckbox = document.querySelector('entrada [valor = "outro"]');
+        var otherText = document.querySelector('input [id = "otherValue"]');
+        otherText.style.visibility = 'oculto';
+
+        otherCheckbox.onchange = function () {
+            if (otherCheckbox.checked) {
+                otherText.style.visibility = 'visible';
+                otherText.value = '';
+            } else {
+                otherText.style.visibility = 'hidden';
+            }
+        };
+
+    </script>
+</body>
+
+</html>

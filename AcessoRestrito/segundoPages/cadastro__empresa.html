@@ -1,0 +1,105 @@
+<div class="container__global__cadastro__pessoa">
+    <div class="container__pessoa__form__pessoa">
+        <section class="header">
+          <h2>Cadastro Funcionário</h2>
+        </section>
+    
+        <form id="form-pessoa-cadastrada" class="form-pessoa-cadastrada">
+          <div class="form-content-pessoa-cadastrada">
+            <label for="nome__pessoa__cadastrada">Nome</label>
+            <input
+              type="text"
+              id="nome__pessoa__cadastrada"
+              placeholder="Digite o seu nome"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content-pessoa-cadastrada">
+            <label for="email__pessoa__cadastrada">E-mail</label>
+            <input
+              type="email"
+              id="email__pessoa__cadastrada"
+              placeholder="Digite o seu email"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content-pessoa-cadastrada">
+            <label for="telefone__pessoa">Telefone</label>
+            <input
+              type="tel"
+              id="telefone__pessoa"
+              placeholder="Digite o seu número de telefone"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content-pessoa-cadastrada">
+            <label for="senha__pessoa">Senha</label>
+            <input
+              type="password"
+              id="senha__pessoa"
+              placeholder="Digite a sua senha"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+
+          <div class="form-content-pessoa-cadastrada">
+            <label for="cep__pessoa">CEP</label>
+            <input
+              type="text"
+              id="cep__pessoa"
+              placeholder="Digite o seu CEP"
+              required
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          
+    
+            <div class="form-content-pessoa-cadastrada">
+                <div class="container__combobox__cadastro__pessoa__estados">
+                    <select class="selecao__estado__pessoa" id="select_estado_pessoa" required>
+                        <option class="opcoes__dentro__selecao__estado" selected disabled value="">Estado</option>
+                        <option class="opcoes__dentro__selecao__estado" value="acre">Acre</option>
+                        <option class="opcoes__dentro__selecao__estado" value="alagoas">Alagoas</option>
+                        <option class="opcoes__dentro__selecao__estado" value="amapa">Amapá</option>
+                        <option class="opcoes__dentro__selecao__estado" value="amazonas">Amazonas</option>
+                        <option class="opcoes__dentro__selecao__estado" value="bahia">Bahia</option>
+                        <option class="opcoes__dentro__selecao__estado" value="ceara">Ceará</option>
+                        <option class="opcoes__dentro__selecao__estado" value="espirito__santo">Espírito Santo</option>
+                        <option class="opcoes__dentro__selecao__estado" value="goias">Goiás</option>
+                        <option class="opcoes__dentro__selecao__estado" value="maranhao">Maranhão</option>
+                        <option class="opcoes__dentro__selecao__estado" value="mato__grosso">Mato Grosso</option>
+                        <option class="opcoes__dentro__selecao__estado" value="mato__grosso__do__sul">Finalizado</option>
+                        <option class="opcoes__dentro__selecao__estado" value="minas__gerais">Minas Gerais</option>
+                        <option class="opcoes__dentro__selecao__estado" value="para">Pará</option>
+                        <option class="opcoes__dentro__selecao__estado" value="paraiba">Paraíba</option>
+                        <option class="opcoes__dentro__selecao__estado" value="parana">Paraná</option>
+                        <option class="opcoes__dentro__selecao__estado" value="pernambuco">Pernambuco</option>
+                        <option class="opcoes__dentro__selecao__estado" value="piaui">Piauí</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rio__de__janeiro">Rio de Janeiro</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rio__grande__do__norte">Rio Grande do Norte</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rio__grande__do__sul">Rio Grande do Sul</option>
+                        <option class="opcoes__dentro__selecao__estado" value="rondonia">Rondônia</option>
+                        <option class="opcoes__dentro__selecao__estado" value="roraima">Roraima</option>
+                        <option class="opcoes__dentro__selecao__estado" value="santa__catarina">Santa Catarina</option>
+                        <option class="opcoes__dentro__selecao__estado" value="sao__paulo">São Paulo</option>
+                        <option class="opcoes__dentro__selecao__estado" value="sergipe">Sergipe</option>
+                        <option class="opcoes__dentro__selecao__estado" value="tocantins">Tocantins</option>
+                    </select>
+                </div>    
+            </div>
+
+            <button type="submit" formaction="/AcessoRestrito/segundoIndex.html" onclick="checkFormPessoaCadastrada()">Entrar</button>
+    
+        </form>
+    
+      </div>
+</div>
+

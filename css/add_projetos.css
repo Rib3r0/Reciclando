@@ -1,0 +1,142 @@
+-------------------------    
+    /* TODO FORMULÁRIO -- INSERÇÃO PROJETO*/
+/* ------------------------- */
+
+.form{
+    display: grid;
+    display: flex;
+    grid-area: 
+    "titulo"
+    "descricao"
+    "imagem"
+    "selecionar"
+    "enviar";
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+
+/* ------------------------- */    
+    /* TITULO DO PROJETO*/
+/* ------------------------- */
+.input__titulo__projeto{
+    grid-area: titulo;
+ display: flex;
+ width: 400px;
+ height: 40px;
+ background-color: var(--dark-green-color);
+ color: var(--white-color);
+ 
+}
+
+
+
+/* ------------------------- */    
+    /* DESCRIÇÃO DO PROJETO*/
+/* ------------------------- */
+
+
+.descricao__projeto{
+    grid-area: descricao;
+display: flex;
+background-color: var(--dark-green-color);
+color: var(--white-color);
+width: 400px;
+height: 200px;
+}
+
+
+
+/* ------------------------- */    
+    /* INSERÇÃO DA IMAGEM */
+/* ------------------------- */
+
+#picture__input {
+    display: none;
+  }
+  
+  .picture {
+    grid-area: imagem;
+    width: 400px;
+    
+    aspect-ratio: 16/9;
+    background: var(--dark-green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    border: 4px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 500ms ease-in-out, background 500ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .picture:hover {
+    color: var(--green-color);
+    background: var(--gray-color);
+  }
+  
+  .picture:active {
+    border-color: var(--black-color);
+    background: var(--black-color);
+  }
+  
+  .picture__img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+  
+/* ------------------------- */    
+    /* STATUS DO PROJETO */
+/* ------------------------- */
+
+
+.container__combobox{
+    grid-area: selecionar;
+    display: flex;
+    background-color: var(--dark-green-color);
+    max-width: 85px;
+    height: 30px;
+
+}
+
+.selecao__status{
+    background-color: var(--dark-green);
+    color: var(--white-color);
+    display: flex;
+    width: 200px;
+}
+
+.selecao__status:hover{
+    background-color: var(--dark-green);
+    color: var(--white-color);
+    
+}
+
+.opcoes__dentro__selecao__status{
+    background-color: var(--dark-green-color);
+}
+
+/* ------------------------- */    
+    /* BOTÃO ENVIAR PROJETO */
+/* ------------------------- */
+
+
+.botao__enviar__projeto{
+    grid-area: enviar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border-width: 2px;
+    border-color: var(--white-color);
+    width: 400px;
+    height: 100px;
+}
+
