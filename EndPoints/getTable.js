@@ -4,13 +4,7 @@ export const getTabela = async (tabela) => {
 
     let url = 'http://localhost:8080/v1/reciclando-educacao/table/'
 
-    let response = await fetch(url,{
-    method: 'GET',
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(tabela)})
+    let response = await fetch(url)
 
     let tabelaResponse = await response.json()
 

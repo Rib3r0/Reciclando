@@ -1,3 +1,4 @@
+import { getTabela } from "../../EndPoints/getTable.js";
 
 export const criarTabelaControle = () =>{
     var container = document.getElementById("container");
@@ -13,13 +14,110 @@ export const criarTabelaControle = () =>{
         headRow.appendChild(th);
     });
 
-    var data = [
-        ['nome', 'data', 'info', 'info', 'local'],
-        ['nome', 'data', 'info', 'info', 'local'],
-        ['nome', 'data', 'info', 'info', 'local'],
-        ['nome', 'data', 'info', 'info', 'local'],
-        ['nome', 'data', 'info', 'info', 'local'],
-    ];
+
+        //let tabelas = getTabela().tables
+
+        let tabelas = [
+            {
+                nome : "Cleber",
+                quantidade_material : 20,
+                data_chegada : "2023-10-20",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber2",
+                quantidade_material : 10,
+                data_chegada : "2023-10-22",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber3",
+                quantidade_material : 5,
+                data_chegada : "2023-10-24",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber",
+                quantidade_material : 20,
+                data_chegada : "2023-10-20",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber2",
+                quantidade_material : 10,
+                data_chegada : "2023-10-22",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber3",
+                quantidade_material : 5,
+                data_chegada : "2023-10-24",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber",
+                quantidade_material : 20,
+                data_chegada : "2023-10-20",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber2",
+                quantidade_material : 10,
+                data_chegada : "2023-10-22",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber3",
+                quantidade_material : 5,
+                data_chegada : "2023-10-24",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber",
+                quantidade_material : 20,
+                data_chegada : "2023-10-20",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber2",
+                quantidade_material : 10,
+                data_chegada : "2023-10-22",
+                local: "qualquercoisas",
+                material: "Madeira"
+            },
+            {
+                nome : "Cleber3",
+                quantidade_material : 5,
+                data_chegada : "2023-10-24",
+                local: "qualquercoisas",
+                material: "Madeira"
+            }
+
+        ]
+        var data = []
+    
+        tabelas.forEach(chegada => {
+                data.push([chegada.nome, chegada.data_chegada,chegada.material,chegada.quantidade_material,chegada.local]) 
+        })
+        
+
+    // var data = [
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    // ];
 
     data.forEach(function (rowData) {
         var row = document.createElement('tr');
