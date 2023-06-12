@@ -1,8 +1,8 @@
 // getTabela - NÃO IMPLEMENTADO
 
-export const getTabela = async (tabela) => {
+export const getTabela = async () => {
 
-    let url = 'http://localhost:8080/v1/reciclando-educacao/table/'
+    let url = 'http://localhost:8080/v1/reciclando-educacao/table/?start=2023-05-01&end=2023-06-12'
 
     let response = await fetch(url)
 

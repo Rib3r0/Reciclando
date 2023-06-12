@@ -1,7 +1,7 @@
 import { getMaterial } from "../../EndPoints/getMaterials.js";
 
 
-export const criarTabelaMaterial = () =>{
+export const criarTabelaMaterial = async () =>{
     var containerTres = document.getElementById("container-material");
     var table = document.createElement('table');
     var thead = document.createElement('thead');
@@ -15,25 +15,11 @@ export const criarTabelaMaterial = () =>{
         headRow.appendChild(th);
     });
 
-    //let materias = getMaterial().materials
+    const materias = await getMaterial()
 
-    let materias = [
-        {
-            quantidade : 10,
-            tipo_material : "MADEIRA"
-        },
-        {
-            quantidade : 20,
-            tipo_material : "PLASTICO"
-        },
-        {
-            quantidade : 30,
-            tipo_material : "METAL"
-        }
-    ]
     var data = []
 
-    materias.forEach(material => {
+    materias.materials.forEach(material => {
             data.push([material.tipo_material, material.quantidade]) 
     })
     
