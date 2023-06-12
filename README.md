@@ -1,6 +1,6 @@
 # RECICLANDO EDUCAÇÃO
 
-## [Clique aqui](https://lion-school.netlify.app/](https://gustavoprevelate.github.io/copia-reciclando-educacao/) para acessar o site
+## [Clique aqui]([https://gustavoprevelate.github.io/copia-reciclando-educacao/]) para acessar o site
 
 <div>   
 <h1>SUMÁRIO</h1>
