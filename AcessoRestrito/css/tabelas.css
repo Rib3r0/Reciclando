@@ -24,3 +24,10 @@ table td {
     background-color: var(--gray-color);
     color: var(--black-color);
 }
+
+@media (max-width: 768px) {
+    #container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
