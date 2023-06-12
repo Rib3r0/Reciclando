@@ -26,8 +26,9 @@ table td {
 }
 
 @media (max-width: 768px) {
-    #container {
-        flex-wrap: wrap;
-        flex-direction: column;
+    table th,
+    table td {
+        width: auto;
+        white-space: nowrap;
     }
 }

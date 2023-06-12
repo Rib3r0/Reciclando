@@ -257,3 +257,47 @@
 	color: black;
 	box-shadow: 0 0 3px black;
 }
+
+@media (max-width: 768px) {
+	.texto__introdutorio {
+	  flex-direction: column;
+	  width: 90%;
+	}
+  
+	.texto__descritivo_sobre__nos {
+	  font-size: 24px;
+	}
+  
+	.container-slide {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.container-items {
+	  width: 90%;
+	  height: auto;
+	}
+  
+	.item {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.item img {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.visao_valores_missao {
+	  width: 90%;
+	}
+  
+	.subtitulo__sobre__nos {
+	  font-size: 24px;
+	}
+  
+	.visao_valores_missao p {
+	  font-size: 18px;
+	}
+  }
+  
