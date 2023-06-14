@@ -5,7 +5,7 @@ html {
   body {
     display: grid;
     height: 100vh;
-    font-family: 'Exo' serif;
+    font-family: 'Exo';
     grid-template-areas: 
     "header"
     "main"
