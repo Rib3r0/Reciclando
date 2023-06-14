@@ -58,11 +58,14 @@ Esse projeto foi proposto pelo professor de PWFE (Programação Web Front End) e
 
 <h1>DOCUMENTAÇÃO</h1> 
 
-- A documentação da API foi gerada de forma padrão pelo postman [clique aqui](...) para conferir.
+- A documentação da API foi gerada de forma padrão pelo postman [clique aqui]([...](https://github.com/Rib3r0/reciclando-educacao-back)) para conferir.
 
 
 
 </div>
    <h1>COLABORADORES</h1>
+| NOMES                                                                                                                                                                                      |                                                     GITHUB                                                      |                                       FOTO                                       |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+
 
 
