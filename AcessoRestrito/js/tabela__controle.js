@@ -7,6 +7,10 @@ export const criarTabelaControle = async () =>{
     var tbody = document.createElement('tbody');
     var headRow = document.createElement('tr');
 
+    var table = document.createElement('table');
+table.classList.add('responsive-table');
+
+
     var headers = ['Responsável por doar', 'Data material doado', 'Tipo material doado', 'Quantidade material doado', 'Onde material foi doado'];
     headers.forEach(function (headerText) {
         var th = document.createElement('th');
@@ -49,4 +53,5 @@ export const criarTabelaControle = async () =>{
     table.appendChild(thead);
     table.appendChild(tbody);
     container.appendChild(table);
+    table.classList.add('responsive-table');
 }

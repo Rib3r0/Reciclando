@@ -24,3 +24,30 @@ table td {
     background-color: var(--gray-color);
     color: var(--black-color);
 }
+
+
+
+.responsive-table {
+    display: block;
+}
+
+.responsive-table table {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .responsive-table table {
+        display: block;
+    }
+
+    .responsive-table table thead {
+        display: none;
+    }
+
+    .responsive-table table tbody,
+    .responsive-table table tr,
+    .responsive-table table td {
+        display: block;
+        width: auto;
+    }
+}

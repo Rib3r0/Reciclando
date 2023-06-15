@@ -399,6 +399,8 @@ a:hover {
     }
 
     .logo-desktop__deitada {
+        margin-left: 100px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
