@@ -2,7 +2,7 @@
 
 export const getCompanies = async () =>{
 
-    const url = 'http://localhost:8080/v1/reciclando-educacao/contribuentes/'
+    const url = 'http://localhost:8080/v1/reciclando-educacao/empresas'
 
     const response = await fetch(url)
 

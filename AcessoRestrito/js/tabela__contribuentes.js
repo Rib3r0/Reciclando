@@ -1,7 +1,8 @@
 import { getCompanies } from "../../EndPoints/getCompanies.js";
 import { getContribuentesMaterial } from "../../EndPoints/getContribuentes.js";
 
-export const criarTabelaContribuentes = () => {
+export const criarTabelaContribuentes = async () =>{
+  
     var containerDois = document.getElementById("container-contribuente");
     var table = document.createElement('table');
     var thead = document.createElement('thead');
@@ -19,37 +20,20 @@ table.classList.add('responsive-table');
         headRow.appendChild(th);
     });
 
-    let empresas = [
-        {
-            nome: "Cleber-1",
-            cpf: "1235465498",
-            email: "Cleber@gmail.com",
-            telefone: "123456789",
-            endereco: "Sãopaulo"
-        },
-        // ...
-    ];
 
-    let contribuentes = [
-        {
-            nome: "Cleber",
-            cpf: "1235465498",
-            email: "Cleber@gmail.com",
-            telefone: "123456789",
-            endereco: "Sãopaulo"
-        },
-        // ...
-    ];
+    let contribuentes = await getContribuentesMaterial()
+    let empresas = await getCompanies()
+    console.log(await getCompanies());
 
-    let data = [];
+    let data = []
 
-    contribuentes.forEach(contribuente => {
-        data.push([contribuente.nome, contribuente.email, contribuente.endereco]);
-    });
 
-    empresas.forEach(empresa => {
-        data.push([empresa.nome, empresa.email, empresa.endereco]);
-    });
+    contribuentes.contribuentes.forEach(contribuente => {
+        data.push([contribuente.nome,contribuente.email,contribuente.id_endereco])
+    })
+    empresas.Companies.forEach(empresa => {
+        data.push([empresa.nome,empresa.email,empresa.id_endereco])
+    })
 
     data.forEach(function (rowData) {
         var row = document.createElement('tr');

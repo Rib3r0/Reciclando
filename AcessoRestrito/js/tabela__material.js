@@ -1,6 +1,6 @@
 import { getMaterial } from "../../EndPoints/getMaterials.js";
 
-export const criarTabelaMaterial = () => {
+export const criarTabelaMaterial = async () =>{
     var containerTres = document.getElementById("container-material");
     var table = document.createElement('table');
     var thead = document.createElement('thead');
@@ -18,26 +18,15 @@ table.classList.add('responsive-table');
         headRow.appendChild(th);
     });
 
-    let materias = [
-        {
-            quantidade: 10,
-            tipo_material: "MADEIRA"
-        },
-        {
-            quantidade: 20,
-            tipo_material: "PLASTICO"
-        },
-        {
-            quantidade: 30,
-            tipo_material: "METAL"
-        }
-    ];
 
-    var data = [];
+    const materias = await getMaterial()
 
-    materias.forEach(material => {
-        data.push([material.tipo_material, material.quantidade]);
-    });
+    var data = []
+
+    materias.materials.forEach(material => {
+            data.push([material.tipo_material, material.quantidade]) 
+    })
+    
 
     data.forEach(function (rowData) {
         var row = document.createElement('tr');

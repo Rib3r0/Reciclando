@@ -1,6 +1,6 @@
 import { getTabela } from "../../EndPoints/getTable.js";
 
-export const criarTabelaControle = () => {
+export const criarTabelaControle = async () =>{
     var container = document.getElementById("container");
     var table = document.createElement('table');
     var thead = document.createElement('thead');
@@ -18,29 +18,24 @@ table.classList.add('responsive-table');
         headRow.appendChild(th);
     });
 
-    let tabelas = [
-        {
-            nome: "Cleber",
-            quantidade_material: 20,
-            data_chegada: "2023-10-20",
-            local: "qualquercoisas",
-            material: "Madeira"
-        },
-        {
-            nome: "Cleber2",
-            quantidade_material: 10,
-            data_chegada: "2023-10-22",
-            local: "qualquercoisas",
-            material: "Madeira"
-        },
-        // ...
-    ];
 
-    var data = [];
+        let tabelas = await getTabela()
+        console.log(getTabela());
 
-    tabelas.forEach(chegada => {
-        data.push([chegada.nome, chegada.data_chegada, chegada.material, chegada.quantidade_material, chegada.local]);
-    });
+        var data = []
+    
+        tabelas.tables.forEach(chegada => {
+                data.push([chegada.qual_doador, chegada.data_chegada.split('T')[0],chegada.tipo_material,chegada.quantidade,chegada.ponto_de_coleta]) 
+        })
+        
+
+    // var data = [
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    //     ['nome', 'data', 'info', 'info', 'local'],
+    // ];
 
     data.forEach(function (rowData) {
         var row = document.createElement('tr');
