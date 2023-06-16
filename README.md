@@ -1,67 +1,64 @@
-# RECICLANDO EDUCAÇÃO
+# Reciclando Educação
 
-## [Clique aqui]([https://gustavoprevelate.github.io/copia-reciclando-educacao/]) para acessar o site
+---
 
-<div>   
-<h1>SUMÁRIO</h1>
+# Portfólio
+---
 
-- [TO DO LIST](#to-do-list)
-- [TECNOLOGIAS APLICADAS](#tecnologias-aplicadas)
-- [FERRAMENTAS](#ferramentas)
-- [CONCEITOS APLICADOS](#conceitos-aplicados)
-- [DOCUMENTACAO](#documentacao)
-- [COLABORADORES](#colaboradores)
+![Screenshot](./img-readme/home-reciclando-educacao.png)
 
-</div>
+[Clique aqui](https://reciclando-educacao.vercel.app/) para visitar o site.
 
-   <h1>SOBRE</h1>
+---
 
-Esse projeto foi proposto pelo professor de PWFE (Programação Web Front End) em conjunto com a disciplina de PWBE (Programação Web Back End) e BDA (Banco de Dados). Deveriamos conversar com nossos clientes ( turma de ADM ) para obter informações sobre o projeto que estavam desenvolvendo, para que assim, fosse criado a estrutura base do código.
+### Sobre esse site:
 
-   <h1>TO DO LIST:</h1>   
-<div>
+Site desenvolvido para um projeto sobre reciclagem, para arrecadar produtos recicláveis que serão convertidos em recursos financeiros para a compra de materiais didáticos e reforma em escolas que estão localizada em cidades do Rio de Janeiro, com Índice de Desenvolvimento da Educação Paulista (IDEP) abaixo de 5,8 para o ensino fundamental.
 
-- Desenvolver o site Reciclando Educação
-- Criar parte das telas dinamicamente
-- Tornar responsivo
-- Criar API
-- Consumir a API
+Este site não é sobre uma empresa de verdade e sim para um projeto integrado, com FrontEnd, BackEnd e Banco de Dados, para aprimorar os conhecimentos obtidos no curso do [SENAI Jandira](https://jandira.sp.senai.br/).
 
-</div>
+---
 
-   <h1>TECNOLOGIAS APLICADAS</h1>
+<h1>TECNOLOGIAS APLICADAS</h1>
+   <a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=vscode,github,git,js,nodejs,html,css,mysql,postman,jquery,&theme=dark" />
+   </a>
+
+
+## Conceitos aplicados
 
 <div>
 
-- HTML5
-- CSS3
-- JAVASCRIPT
-- JQuery
-- nodeJS
-
-</div>
-
-<h1>FERRAMENTAS</h1> 
-       <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=vscode,github,git,postman&theme=dark" />
-    </a>
-    
-<h1>CONCEITOS APLICADOS</h1>   
-<div>
-
-- JSON
 - API
-- DATA PICKER
-- ASYNC & AWAIT
-
-
-
-<h1>DOCUMENTAÇÃO</h1> 
-
-- A documentação da API foi gerada de forma padrão pelo postman [clique aqui]([...](https://github.com/Rib3r0/reciclando-educacao-back)) para conferir.
-
-
+- ROUTER
+- VLIBRAS
 
 </div>
- 
 
+---
+## Itens Adicionais
+
+- Figma
+
+![Screenshot](./img-readme/figma-reciclando-educacao.png)
+
+[Clique aqui](https://www.figma.com/file/8UnrysItM9fHTTRUBzABCh/Apresenta%C3%A7%C3%A3o?type=design&node-id=0-1&t=gYIfAOIKTKukF1EC-0) para visitar o Figma.
+
+---
+## Relatório do LightHouse
+O LightHouse básicamente analisa todo o seu site, indicando como está determinados aspectos do mesmo. Segue o relatório:
+
+![Report](./img-readme/lighthouse-reciclando-educacao.png)
+
+---
+## Equipe
+| [Bianca Duarte](https://github.com/biiaduartez) | Desenvolvedor Front-end |
+| [Eduardo Ribeiro](https://github.com/Rib3r0)  | Desenvolvedor FullStack |
+| [Gabriel Domingues](https://github.com/GABRIELDOMINGUESR) | Desenvolvedor Banco de Dados |
+| [Gustavo Prevelate](https://github.com/GustavoPrevelate) | Desenvolvedor Front-end |
+
+
+
+
+
+---
