@@ -19,6 +19,7 @@ Este site não é sobre uma empresa de verdade e sim para um projeto integrado, 
 
 ---
 
+
 <h1>TECNOLOGIAS APLICADAS</h1>
    <a href="https://skillicons.dev">
       <img src="https://skillicons.dev/icons?i=vscode,github,git,js,nodejs,html,css,mysql,postman,jquery,&theme=dark" />
@@ -50,15 +51,14 @@ O LightHouse básicamente analisa todo o seu site, indicando como está determin
 
 ![Report](./img-readme/lighthouse-reciclando-educacao.png)
 
----
-## Equipe
-| [Bianca Duarte](https://github.com/biiaduartez) | Desenvolvedor Front-end |
-| [Eduardo Ribeiro](https://github.com/Rib3r0)  | Desenvolvedor FullStack |
-| [Gabriel Domingues](https://github.com/GABRIELDOMINGUESR) | Desenvolvedor Banco de Dados |
-| [Gustavo Prevelate](https://github.com/GustavoPrevelate) | Desenvolvedor Front-end |
 
+</div>
+   <h1>COLABORADORES</h1>
 
+| NOMES                                                                                                                                                                                      |                                                     GITHUB                                                      |                                       
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| <a href="https://github.com/biiaduartez"><img src="https://img.shields.io/badge/DESENVOLVEDOR-BIANCA%20DUARTEZ-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a> | <a href="https://github.com/biiaduartez"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a> |  
+| <a href="https://github.com/Rib3r0"><img src="https://img.shields.io/badge/DESENVOLVEDOR-EDUARDO%20RIBEIRO%20-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>      | <a href="https://github.com/Rib3r0"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a> |
+| <a href="https://github.com/GABRIELDOMINGUESR"><img src="https://img.shields.io/badge/DESENVOLVEDOR-GABRIEL%20DOMINGUES-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>      | <a href="https://github.com/GABRIELDOMINGUESR"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a> | 
+| <a href="https://github.com/GustavoPrevelate"><img src="https://img.shields.io/badge/DESENVOLVEDOR-GUSTAVO%20PREVELATE%20-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>      | <a href="https://github.com/GustavoPrevelate"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a> | 
 
-
-
----
