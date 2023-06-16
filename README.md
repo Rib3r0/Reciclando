@@ -52,12 +52,57 @@ O LightHouse básicamente analisa todo o seu site, indicando como está determin
 ![Report](./img-readme/lighthouse-reciclando-educacao.png)
 
 
+
 </div>
    <h1>COLABORADORES</h1>
 
- <a href="https://github.com/biiaduartez"><img src="https://img.shields.io/badge/DESENVOLVEDOR-BIANCA%20DUARTEZ-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>  <a href="https://github.com/biiaduartez"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a>   
- <a href="https://github.com/Rib3r0"><img src="https://img.shields.io/badge/DESENVOLVEDOR-EDUARDO%20RIBEIRO%20-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>       
- <a href="https://github.com/Rib3r0"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a> 
- <a href="https://github.com/GABRIELDOMINGUESR"><img src="https://img.shields.io/badge/DESENVOLVEDOR-GABRIEL%20DOMINGUES-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>       <a href="https://github.com/GABRIELDOMINGUESR"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a>  
- <a href="https://github.com/GustavoPrevelate"><img src="https://img.shields.io/badge/DESENVOLVEDOR-GUSTAVO%20PREVELATE%20-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"></a>       <a href="https://github.com/GustavoPrevelate"><img src="https://skillicons.dev/icons?i=github&theme=dark"/></a> 
+| NOMES                                                                                                                                                                                      |                                                     GITHUB                                                      |                                       
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+<style>
+   a{
+      display: flex;
+      flex-direction: row;
+      width: 270px;
+      align-items: center;
+      justify-content: space-between ;
+      text-decoration: none;
+      color: #000
+   }
+
+
+</style>
+   <a  href="https://github.com/biiaduartez">
+    | 
+    <img src="https://img.shields.io/badge/DESENVOLVEDOR-BIANCA%20DUARTEZ-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"> 
+    |
+    <img src="https://skillicons.dev/icons?i=github&theme=dark"/></a>
+     | 
+   </a> 
+   <a  href="https://github.com/Rib3r0">
+    | 
+    <img src="https://img.shields.io/badge/DESENVOLVEDOR-EDUARDO%20RIBEIRO-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"> 
+    |
+    <img src="https://skillicons.dev/icons?i=github&theme=dark"/></a>
+     | 
+   </a>
+   <a  href="https://github.com/GABRIELDOMINGUESR">
+    | 
+    <img src="https://img.shields.io/badge/DESENVOLVEDOR-GABRIEL%20DOMINGUES-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"> 
+    |
+    <img src="https://skillicons.dev/icons?i=github&theme=dark"/></a>
+     | 
+   </a> 
+   <a  href="https://github.com/GustavoPrevelate">
+    | 
+    <img src="https://img.shields.io/badge/DESENVOLVEDOR-GUSTAVO%20PREVELATE-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"> 
+    |
+    <img src="https://skillicons.dev/icons?i=github&theme=dark"/></a>
+     
+   </a> 
+
+
+
+
+
+
 
