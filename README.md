@@ -58,19 +58,10 @@ O LightHouse básicamente analisa todo o seu site, indicando como está determin
 
 | NOMES                                                                                                                                                                                      |                                                     GITHUB                                                      |                                       
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-<style>
-   a{
-      display: flex;
-      flex-direction: row;
-      width: 270px;
-      align-items: center;
-      justify-content: space-between ;
-      text-decoration: none;
-      color: #000
-   }
 
 
-</style>
+
+
    <a  href="https://github.com/biiaduartez">
     | 
     <img src="https://img.shields.io/badge/DESENVOLVEDOR-BIANCA%20DUARTEZ-informational?style=for-the-badge&logo=appveyorlabelColor=FF00FF"> 
