@@ -1,0 +1,507 @@
+openapi: 3.0.3
+info:
+  title: Projeto Reciclando Eduacação 1.0
+  description: projeto
+  version: 1.0.0
+servers:
+  - url: https://localhost:8080/v1/reciclando-educacao/
+tags:
+  - name: login
+    description: Tudo sobre login
+  - name: contribuentes
+    description: Tudo sobre cadastro de contribuentes
+  - name: empresas
+    description: Tudo sobre cadastro de empresas
+  - name: controle de material
+    description: Tudo sobre controle de materiais
+paths:
+  /login:
+    get:
+      tags:
+        - login
+      summary: Valida um login
+      description: Valida um login usando senha e nome.
+      parameters:
+        - name: nome
+          in: query
+          description: nome do usuario
+          required: true
+          explode: true
+          schema:
+            type: string
+        - name: senha
+          in: query
+          description: senha do usuario
+          required: true
+          explode: true
+          schema:
+            type: string
+
+
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/retornoLogin'   
+        '500':
+          description: Erro interno no servidor de Bando de Dados.
+
+  /cadastro:
+    post:
+      tags:
+        - login
+      summary: Cria um login
+      description: Cria um login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/criarLogin'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/retornoCadastro'
+        '415':
+          description: Invalid content type
+
+  /contribuentes/:
+    post:
+      tags:
+        - contribuentes
+      summary: Cria um cadastro de contribuentes
+      description: Cria um cadastro de contribuentes
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/criarContribuente'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/retornoContribuente'
+        '415':
+          description: Invalid content type
+
+    get:
+      tags:
+        - contribuentes
+      summary: Retorna os contribuentes
+      description: Retorna os contribuentes
+
+
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/respostaContribuentes'   
+        '500':
+          description: Erro interno no servidor de Bando de Dados.
+          
+  /empresas/:
+      post:
+        tags:
+          - empresas
+        summary: Cria um cadastro de empresas
+        description: Cria um cadastro de empresas
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/criarEmpresa'
+          required: true
+        responses:
+          '200':
+            description: Successful operation
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/retornoContribuente'
+          '415':
+            description: Invalid content type
+  
+      get:
+        tags:
+          - empresas
+        summary: Retorna as empresas
+        description: Retorna as empresas
+  
+  
+        responses:
+          '200':
+            description: Successful operation
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/respostaEmpresas'   
+          '500':
+            description: Erro interno no servidor de Bando de Dados.
+            
+  /table/:
+    post:
+      tags:
+        - controle de material
+      summary: Cria a entrada de material
+      description: Cria a entrada de material
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/criarEntrada'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/retornoMaterial'
+        '415':
+          description: Invalid content type
+    get:
+      tags:
+        - controle de material
+      summary: Retorna a entrada de material
+      description: Retorna a entrada de material
+      parameters:
+        - name: start
+          in: query
+          description: nome do usuario
+          required: true
+          explode: true
+          schema:
+            type: string
+            example: 2023-05-01
+        - name: end
+          in: query
+          description: senha do usuario
+          required: true
+          explode: true
+          schema:
+            type: string
+            example: 2023-05-01
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/respostaControle'
+        '500':
+          description: Erro interno no servidor de Bando de Dados.
+  /materials/:
+    get:
+      tags:
+        - controle de material
+      summary: Retorna a quantidade total de material
+      description: Retorna a quantidade total de materiais
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/respostaMaterial'
+        '500':
+          description: Erro interno no servidor de Bando de Dados.
+  
+components:
+  schemas:
+    retornoLogin:
+      type: object
+      properties:
+          status:
+            type: integer
+            format: int64
+            example: 200
+          accountValidate:
+            type: boolean
+            format: int64
+            example: true
+          account:
+            type: object
+            properties:
+              id:
+                type: integer
+                format: int64
+                example: 1
+              nome:
+                type: string
+                format: int64
+                example: ana
+              senha:
+                type: string
+                format: int64
+                example: 123
+              email:
+                type: string
+                format: int64
+                example: ana@gmail.com
+    criarLogin:
+          type: object
+          properties:
+                  nome:
+                    type: string
+                    format: int64
+                    example: ana
+                  senha:
+                    type: string
+                    format: int64
+                    example: 123
+                  email:
+                    type: string
+                    format: int64
+                    example: ana@gmail.com
+    retornoCadastro:
+      type: object
+      properties:
+          status:
+            type: integer
+            format: int64
+            example: 200
+          accountValidate:
+            type: boolean
+            format: int64
+            example: true
+    criarContribuente:
+          type: object
+          properties:
+                  nome:
+                    type: string
+                    format: int64
+                    example: ana
+                  cpf:
+                    type: string
+                    format: int64
+                    example: 123.123.123-X
+                  email:
+                    type: string
+                    format: int64
+                    example: ana@gmail.com
+                  telefone:
+                    type: string
+                    format: int64
+                    example: (11) 9 8888-8888
+                  endereco:
+                    type: string
+                    format: int64
+                    example: jandira
+    retornoContribuente:
+        type: object
+        properties:
+            status:
+              type: integer
+              format: int64
+              example: 200
+            accountValidate:
+              type: boolean
+              format: int64
+              example: true
+    respostaContribuentes:
+      type: object
+      properties:
+          status:
+            type: integer
+            format: int64
+            example: 200
+          contribuentes:
+            type: array
+            items:
+              type: object
+              properties:
+                  nome:
+                    type: string
+                    format: int64
+                    example: ana
+                  cpf:
+                    type: string
+                    format: int64
+                    example: 123.123.123-X
+                  email:
+                    type: string
+                    format: int64
+                    example: ana@gmail.com
+                  telefone:
+                    type: string
+                    format: int64
+                    example: (11) 9 8888-8888
+                  endereco:
+                    type: string
+                    format: int64
+                    example: jandira
+                    
+    criarEmpresa:
+          type: object
+          properties:
+                  nome:
+                    type: string
+                    format: int64
+                    example: ana
+                  cnpj:
+                    type: string
+                    format: int64
+                    example: 123.123.123-X
+                  email:
+                    type: string
+                    format: int64
+                    example: ana@gmail.com
+                  telefone:
+                    type: string
+                    format: int64
+                    example: (11) 9 8888-8888
+                  endereco:
+                    type: string
+                    format: int64
+                    example: jandira
+                  material:
+                    type: string
+                    format: int64
+                    example: pilha
+                  periodo:
+                    type: string
+                    format: int64
+                    example: mensal    
+    respostaEmpresas:
+      type: object
+      properties:
+          status:
+            type: integer
+            format: int64
+            example: 200
+          contribuentes:
+            type: array
+            items:
+              type: object
+              properties:
+                  nome:
+                    type: string
+                    format: int64
+                    example: ana
+                  cnpj:
+                    type: string
+                    format: int64
+                    example: 123.123.123-X
+                  email:
+                    type: string
+                    format: int64
+                    example: ana@gmail.com
+                  telefone:
+                    type: string
+                    format: int64
+                    example: (11) 9 8888-8888
+                  endereco:
+                    type: string
+                    format: int64
+                    example: jandira
+                  material:
+                    type: string
+                    format: int64
+                    example: pilha
+                  periodo:
+                    type: string
+                    format: int64
+                    example: mensal  
+    criarEntrada:
+          type: object
+          properties:
+                  nome:
+                    type: string
+                    format: int64
+                    example: ana
+                  material:
+                    type: string
+                    format: int64
+                    example: pilha                    
+                  quantidade:
+                    type: number
+                    format: int64
+                    example: 20
+                  local:
+                    type: string
+                    format: int64
+                    example: Jandira                    
+                    
+                    
+    retornoMaterial:
+        type: object
+        properties:
+            status:
+              type: integer
+              format: int64
+              example: 200
+            created:
+              type: boolean
+              format: int64
+              example: true
+              
+    respostaMaterial:
+      type: object
+      properties:
+          status:
+            type: integer
+            format: int64
+            example: 200
+          materials:
+            type: array
+            items:
+              type: object
+              properties:
+                  tipo_material:
+                    type: string
+                    format: int64
+                    example: pilha                    
+                  quantidade:
+                    type: number
+                    format: int64
+                    example: 20
+    respostaControle:
+        type: object
+        properties:
+            status:
+              type: integer
+              format: int64
+              example: 200
+            tables:
+              type: array
+              items:
+                type: object
+                properties:
+                    id:
+                      type: number
+                      format: int64
+                      example: 1
+                    quantidade:
+                      type: number
+                      format: int64
+                      example: 20
+                    data_chegada:
+                      type: string
+                      format: int64
+                      example: "2023-06-07T00:00:00.000Z"
+                    qual_doador:
+                      type: string
+                      format: int64
+                      example: Maria
+                    id_material:
+                      type: number
+                      format: int64
+                      example: 1
+                    ponto_de_coleta:
+                      type: string
+                      format: int64
+                      example: jandira
+                    tipo_material:
+                      type: string
+                      format: int64
+                      example: pilha  
